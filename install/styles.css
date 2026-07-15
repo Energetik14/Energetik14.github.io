@@ -19,7 +19,7 @@ a { color: inherit; }
 
 .hero { min-height: 760px; overflow: hidden; position: relative; border-bottom: 1px solid var(--line); background: radial-gradient(circle at 77% 34%, rgba(56,135,255,.22), transparent 28%), radial-gradient(circle at 12% 82%, rgba(103,185,75,.15), transparent 27%), linear-gradient(145deg,#111721,#080a0d 70%); }
 .hero::before { content:""; position:absolute; inset:0; opacity:.12; background-image: linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px); background-size:64px 64px; mask-image:linear-gradient(to bottom,black,transparent 88%); }
-.hero__sackboy { position:absolute; z-index:1; top:112px; right:clamp(80px,10vw,220px); width:min(36vw,500px); height:auto; pointer-events:none; user-select:none; filter:drop-shadow(0 32px 42px rgba(0,0,0,.48)) drop-shadow(0 0 34px rgba(56,135,255,.14)); }
+.hero__sackboy { position:absolute; z-index:3; top:112px; right:clamp(80px,10vw,220px); width:min(36vw,500px); height:auto; pointer-events:none; user-select:none; filter:drop-shadow(0 32px 42px rgba(0,0,0,.48)) drop-shadow(0 0 34px rgba(56,135,255,.14)); }
 .nav { height:86px; display:flex; align-items:center; justify-content:space-between; position:relative; z-index:2; }
 .seller { display:flex; align-items:center; gap:12px; text-decoration:none; font-weight:800; }
 .seller img { width:42px; height:42px; border-radius:10px; box-shadow:0 10px 30px rgba(56,135,255,.22); }
