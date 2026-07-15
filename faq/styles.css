@@ -21,7 +21,7 @@ a{color:inherit}
 
 .hero{min-height:790px;position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:radial-gradient(circle at 80% 25%,rgba(59,134,255,.23),transparent 28%),radial-gradient(circle at 16% 82%,rgba(86,201,121,.13),transparent 26%),linear-gradient(145deg,#111925,#07090d 72%)}
 .hero::before{content:"";position:absolute;inset:0;opacity:.11;background-image:linear-gradient(rgba(255,255,255,.1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.1) 1px,transparent 1px);background-size:64px 64px;mask-image:linear-gradient(to bottom,black,transparent 92%)}
-.hero__sackboy{position:absolute;z-index:1;top:112px;right:clamp(24px,5vw,84px);width:min(31vw,430px);height:auto;pointer-events:none;user-select:none;filter:drop-shadow(0 32px 42px rgba(0,0,0,.48)) drop-shadow(0 0 34px rgba(59,134,255,.14))}
+.hero__sackboy{position:absolute;z-index:1;top:105px;right:clamp(80px,10vw,220px);width:min(36vw,500px);height:auto;pointer-events:none;user-select:none;filter:drop-shadow(0 32px 42px rgba(0,0,0,.48)) drop-shadow(0 0 34px rgba(59,134,255,.14))}
 .nav{height:86px;display:flex;align-items:center;justify-content:space-between;position:relative;z-index:2}
 .seller{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:900}
 .seller img{width:42px;height:42px;border-radius:11px;box-shadow:0 12px 30px rgba(59,134,255,.2)}
