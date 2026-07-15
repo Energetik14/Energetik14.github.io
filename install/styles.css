@@ -37,6 +37,7 @@ h1 span { color:var(--blue); }
 .summary span { font-size:13px; line-height:1.35; color:#c4cad3; }
 
 .start { padding:90px 0 58px; }
+.start__vpn { margin-bottom:18px; }
 .warning { display:flex; align-items:center; gap:22px; padding:28px 32px; border:1px solid rgba(255,107,53,.35); background:linear-gradient(110deg,rgba(255,107,53,.13),rgba(255,107,53,.025)); border-radius:20px; }
 .warning__icon { flex:0 0 52px; height:52px; display:grid; place-items:center; border-radius:14px; background:var(--orange); font-size:25px; font-weight:900; }
 .warning h2 { margin:0 0 4px; font-size:21px; }
@@ -79,7 +80,9 @@ li::marker { color:var(--green); }
 .recommend { margin-top:24px; padding:55px 60px; border:1px solid var(--line); border-radius:24px; background:radial-gradient(circle at 87% 25%,rgba(56,135,255,.18),transparent 28%),linear-gradient(130deg,#171c24,#11141a); }
 .recommend > span { color:var(--cyan); font-size:12px; font-weight:900; letter-spacing:.14em; }
 .recommend h2 { max-width:760px; }
-.recommend a { display:inline-block; margin-top:8px; padding:15px 22px; border-radius:12px; background:var(--blue); text-decoration:none; font-weight:800; box-shadow:0 12px 30px rgba(56,135,255,.23); }
+.recommend__actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:8px; }
+.recommend a { display:inline-block; padding:15px 22px; border-radius:12px; background:var(--blue); text-decoration:none; font-weight:800; box-shadow:0 12px 30px rgba(56,135,255,.23); }
+.recommend a.order-link { background:var(--green); box-shadow:0 12px 30px rgba(103,185,75,.2); }
 
 footer { border-top:1px solid var(--line); background:#07090c; }
 .footer__inner { min-height:150px; display:flex; align-items:center; justify-content:space-between; gap:50px; }
