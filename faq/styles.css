@@ -21,13 +21,14 @@ a{color:inherit}
 
 .hero{min-height:790px;position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:radial-gradient(circle at 80% 25%,rgba(59,134,255,.23),transparent 28%),radial-gradient(circle at 16% 82%,rgba(86,201,121,.13),transparent 26%),linear-gradient(145deg,#111925,#07090d 72%)}
 .hero::before{content:"";position:absolute;inset:0;opacity:.11;background-image:linear-gradient(rgba(255,255,255,.1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.1) 1px,transparent 1px);background-size:64px 64px;mask-image:linear-gradient(to bottom,black,transparent 92%)}
+.hero__sackboy{position:absolute;z-index:1;top:112px;right:clamp(24px,5vw,84px);width:min(31vw,430px);height:auto;pointer-events:none;user-select:none;filter:drop-shadow(0 32px 42px rgba(0,0,0,.48)) drop-shadow(0 0 34px rgba(59,134,255,.14))}
 .nav{height:86px;display:flex;align-items:center;justify-content:space-between;position:relative;z-index:2}
 .seller{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:900}
 .seller img{width:42px;height:42px;border-radius:11px;box-shadow:0 12px 30px rgba(59,134,255,.2)}
 .nav__links{display:flex;align-items:center;gap:24px}
 .nav__links a{text-decoration:none;color:#c9d0da;font-size:14px;font-weight:700}
 .nav__links .nav__button{padding:11px 16px;border:1px solid var(--line);border-radius:11px;color:#fff}
-.hero__content{position:relative;z-index:1;padding-top:88px}
+.hero__content{position:relative;z-index:2;padding-top:88px}
 .eyebrow{display:flex;align-items:center;gap:10px;color:#d0d6df;font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}
 .eyebrow i{width:9px;height:9px;border-radius:50%;background:var(--green);box-shadow:0 0 18px rgba(86,201,121,.8)}
 h1{margin:30px 0 26px;font-size:clamp(64px,7.2vw,110px);line-height:.94;letter-spacing:-.065em}
@@ -96,12 +97,14 @@ footer{border-top:1px solid var(--line);background:#06080b}.footer__inner{min-he
 
 @media(max-width:1000px){
   .wrap{width:min(100% - 36px,800px)}
+  .hero__sackboy{top:155px;right:-32px;width:280px;opacity:.3}
   .requirements,.steps-row{grid-template-columns:1fr}
   .hero{min-height:980px}.send,.password{grid-template-columns:1fr;gap:40px}.comparison,.nick-grid{grid-template-columns:1fr}
   .result>p{min-height:0}.cta{align-items:flex-start;flex-direction:column}.password__visual{min-height:420px}
 }
 @media(max-width:640px){
   .wrap{width:min(100% - 28px,560px)}.nav{height:72px}.nav__links>a:first-child{display:none}.nav__links .nav__button{padding:8px 10px;font-size:11px}
+  .hero__sackboy{top:175px;right:-64px;width:240px;opacity:.22}
   .hero{min-height:920px}.hero__content{padding-top:65px}h1{font-size:50px}.hero__content>p{font-size:16px}.requirements{margin-top:38px}.requirements article{min-height:104px}
   .send{padding-top:70px}.important{align-items:flex-start;padding:23px;margin-bottom:70px}.important h2{font-size:18px}
   .check-section,.password,.nick,.faq{padding:75px 0}.send h2,.section-head h2,.password h2{font-size:36px}.password__visual{min-height:350px}

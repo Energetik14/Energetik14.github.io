@@ -19,13 +19,14 @@ a { color: inherit; }
 
 .hero { min-height: 760px; overflow: hidden; position: relative; border-bottom: 1px solid var(--line); background: radial-gradient(circle at 77% 34%, rgba(56,135,255,.22), transparent 28%), radial-gradient(circle at 12% 82%, rgba(103,185,75,.15), transparent 27%), linear-gradient(145deg,#111721,#080a0d 70%); }
 .hero::before { content:""; position:absolute; inset:0; opacity:.12; background-image: linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px); background-size:64px 64px; mask-image:linear-gradient(to bottom,black,transparent 88%); }
+.hero__sackboy { position:absolute; z-index:1; top:125px; right:clamp(24px,5vw,84px); width:min(31vw,430px); height:auto; pointer-events:none; user-select:none; filter:drop-shadow(0 32px 42px rgba(0,0,0,.48)) drop-shadow(0 0 34px rgba(56,135,255,.14)); }
 .nav { height:86px; display:flex; align-items:center; justify-content:space-between; position:relative; z-index:2; }
 .seller { display:flex; align-items:center; gap:12px; text-decoration:none; font-weight:800; }
 .seller img { width:42px; height:42px; border-radius:10px; box-shadow:0 10px 30px rgba(56,135,255,.22); }
 .profile-link { padding:12px 18px; border:1px solid var(--line); border-radius:12px; text-decoration:none; font-size:14px; color:#d4d8df; }
 .profile-link:hover { border-color:var(--blue); }
 .profile-link b { color:var(--cyan); margin-left:6px; }
-.hero__content { position:relative; z-index:1; padding-top:105px; }
+.hero__content { position:relative; z-index:2; padding-top:105px; }
 .tag { font-size:13px; font-weight:800; letter-spacing:.13em; text-transform:uppercase; color:#d2d7df; display:flex; align-items:center; gap:10px; }
 .tag i { width:9px; height:9px; background:var(--green); border-radius:2px; box-shadow:0 0 18px rgba(103,185,75,.8); }
 h1 { font-size:clamp(62px,7vw,108px); line-height:.95; letter-spacing:-.065em; margin:32px 0 28px; }
@@ -90,6 +91,7 @@ footer { border-top:1px solid var(--line); background:#07090c; }
 
 @media(max-width:1000px){
   .wrap{width:min(100% - 36px,780px)}
+  .hero__sackboy{top:160px;right:-32px;width:280px;opacity:.3}
   .step,.step.reverse,.password{grid-template-columns:1fr;gap:34px}
   .step.reverse .copy,.step.reverse .shot{order:initial}
   .copy{position:static}
@@ -98,6 +100,7 @@ footer { border-top:1px solid var(--line); background:#07090c; }
 }
 @media(max-width:640px){
   .wrap{width:min(100% - 28px,560px)}
+  .hero__sackboy{top:178px;right:-64px;width:240px;opacity:.22}
   .hero{min-height:680px}.nav{height:74px}.hero__content{padding-top:76px}
   h1{font-size:50px}.hero__content>p{font-size:17px}.profile-link{padding:9px 11px;font-size:12px}
   .links{grid-template-columns:1fr}.step{padding:58px 0}.shot{padding:6px;border-radius:12px}
